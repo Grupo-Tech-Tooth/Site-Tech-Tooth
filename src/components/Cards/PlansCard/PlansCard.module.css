@@ -5,7 +5,8 @@
     align-items: baseline;
     height: fit-content;
     font-family: 'Montserrat', sans-serif;
-    min-width: 300px;
+    height: fit-content;
+    gap: 1rem;
     
     .card {
         height: 100%;
@@ -18,22 +19,24 @@
         transition: 1s;
         padding-bottom: 5%;
         border-radius: 5px;
+        padding: 0% !important;
+        padding-bottom: 1rem !important;
 
-        h3 {
+        .card-title {
             text-align: center;
             width: 100%;
             height: fit-content;
             padding: 4%;
             align-items: center;
-            background-color: #007BFF;
+            background-color: #007BFF !important;
             margin-bottom: 15px;
             font-weight: 400;
             font-size: 1.4rem;
-            color: #ffffff;
+            color: #ffffff !important;
             border-radius: 5px 5px 0 0;
         }
 
-        h4 {
+        h5 {
             font-weight: 600;
             font-size: 2rem;
             width: 100%;
@@ -43,7 +46,7 @@
 
             span {
                 color: black;
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
 
@@ -52,7 +55,7 @@
             width: 100%;
             text-align: center;
             align-items: center;
-            padding: 0% 3%;
+            
             font-size: 1rem;
             line-height: 1.8;
         }

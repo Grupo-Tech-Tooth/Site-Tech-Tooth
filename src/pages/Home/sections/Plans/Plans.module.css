@@ -1,7 +1,7 @@
 .plans {
     background-color: #C2DBF4;
     width: 100%;    
-    padding: 2% 4%;
+    padding: 2rem 10%;
     font-family: 'Montserrat', sans-serif;
 
     .plans_title {
@@ -29,10 +29,16 @@
         margin: 2rem 1% 0 1%;
         display: flex;
         width: 98%;
-        gap: 3%;
+        gap: 2rem;
         justify-content: center;
         align-items: center;
         min-width: 200px;
+
+        div{
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
     }
 }
 

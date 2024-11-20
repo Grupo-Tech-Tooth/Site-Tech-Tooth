@@ -22,12 +22,24 @@ const Home = () => {
   return (
     <>
       <Navbar items={urls} />
-      <About id="home" />
-      <Features id="funcionalidades" />
-      <Plans id="precos" />
-      <Testimonials id="depoimento" />
-      <Blog id="blog" />
-      <ContactUs id="contato" />
+      <section id='home'>
+      <About/>
+      </section>
+      <section id="funcionalidades" >
+      <Features/>
+      </section>
+      <section id="precos">
+      <Plans/>
+      </section>
+      <section id="depoimento">
+      <Testimonials/>
+      </section>
+      <section id="blog">
+      <Blog/>
+      </section>
+      <section id="contato">
+      <ContactUs/>
+      </section>
       <Footer />
     </>
   );

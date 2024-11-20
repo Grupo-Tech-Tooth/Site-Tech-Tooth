@@ -17,7 +17,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <div className="navbar">
+      <div className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="box">
           <img className="logo" src={logo} width={"250px"} />
           <h1 className="navbar-title">Tech Tooth</h1>
