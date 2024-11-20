@@ -34,10 +34,10 @@
     }
 
     .blog-news-card{
-        width: 100%;
-        padding: 0 10%;
+        width: 92%;
+        padding: 0 5%;
         display: flex;
-        gap: 2%;
+        gap: 1rem 0;
     }
 }
 

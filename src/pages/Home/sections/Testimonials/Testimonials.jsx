@@ -1,11 +1,10 @@
-import PlansCard from '../../../../components/Cards/PlansCard/PlansCard';
 import TestimonialsCard from '../../../../components/Cards/TestimonialsCard/TestimonialsCard';
 import style from './Testimonials.module.css';
 import testimony01 from '../../../../assets/Testimony/testimony01.png';
 import testimony02 from '../../../../assets/Testimony/testimony02.png';
 import testimony03 from '../../../../assets/Testimony/testimony03.png';
 
-const Testimonials = ({ id }) =>{
+const Testimonials = ({ id }) => {
 
     const listTestimonials = [
         {
@@ -24,26 +23,26 @@ const Testimonials = ({ id }) =>{
             'author': 'Dr. Carlos Pereira'
         }
     ]
-    
-    return(
+
+    return (
         <div className={style['testimonials']} id={id}>
-            <div className={style['testimonials-title']}>
+            <div className={`${style['testimonials-title']} container`}>
                 <h1>Depoimentos</h1>
                 <h2>Veja o que nossos clientes estão dizendo</h2>
             </div>
-            <div className={style['card_line']}>
-                { 
-                    listTestimonials.map((card, index) =>(
+            <div className={`${style['card_line']} row`}>
+                {
+                    listTestimonials.map((card, index) => (
                         <TestimonialsCard
-                        key={index}
-                        image={card.image}
-                        testimony={card.testimony}
-                        author={card.author}
+                            key={index}
+                            image={card.image}
+                            testimony={card.testimony}
+                            author={card.author}
                         />
                     ))
                 }
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -3,7 +3,7 @@ import style from './TestimonialsCard.module.css';
 
 const TestimonialsCard = ({image, testimony, author}) =>{
     return(
-        <Container maxWidth='sm' className={style['card_line']} style={{backgroundImage: `url(${image})`, padding: '0'}}>
+        <Container maxWidth='sm' className={`${style['card_line']} col-12 col-md`} style={{backgroundImage: `url(${image})`}}>
             <div className={style['card']}>
                 <span>{testimony}
                 <p>-{author}</p>
